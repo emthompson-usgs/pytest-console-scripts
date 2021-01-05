@@ -238,7 +238,7 @@ class ScriptRunner(object):
                 try:
                     et, ev, tb = sys.exc_info()
                     # Hide current frame from the stack trace.
-                    traceback.print_exception(et, ev, tb.tb_next)
+                    traceback.print_exception(et, ev, tb)
                 finally:
                     del tb
 
