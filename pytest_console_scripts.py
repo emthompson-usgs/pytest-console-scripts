@@ -233,8 +233,7 @@ class ScriptRunner(object):
                     returncode = 1
                 elif returncode is None:
                     returncode = 0
-            except Exception as ex:
-                raise ex
+            except Exception:
                 returncode = 1
                 try:
                     et, ev, tb = sys.exc_info()
